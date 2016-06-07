@@ -39,8 +39,6 @@ ADD php-fpm.conf /usr/local/etc/php-fpm.conf
 ADD composer.phar /usr/local/bin/composer
 RUN chmod 755 /usr/local/bin/composer
 
-WORKDIR /dvwa
-
 # Write Permission
 RUN usermod -u 1000 www-data
 
