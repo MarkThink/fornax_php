@@ -1,4 +1,4 @@
-FROM index.caicloud.io/caicloud/php:5.6-fpm
+FROM index.caicloud.io/markthink/php:5.6-fpm
 
 # Install env
 ADD sources.list /etc/apt/sources.list
