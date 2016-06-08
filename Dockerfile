@@ -1,5 +1,8 @@
 FROM index.caicloud.io/markthink/php:5.6-fpm
 
+RUN mkdir -p /dvwa && mkdir -p /dvwa/log && rm -rf /etc/nginx/conf.d/default.conf
+ADD dvwa.tar.gz /dvwa/
+
 # Install env
 ADD sources.list /etc/apt/sources.list
 RUN apt-get update && apt-get install -y \
